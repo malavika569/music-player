@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Playlists</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="player">
+    <div style="display:flex; justify-content: space-between; align-items:center; margin-bottom:12px;">
+      <a href="index.html" class="icon-btn" style="text-decoration:none; padding:6px 10px;">← Back</a>
+      <div style="opacity:.85">Playlists</div>
+      <div style="width:76px;"></div>
+    </div>
+
+    <div style="display:flex; gap:8px; align-items:center; margin-bottom:12px;">
+      <input id="playlistName" placeholder="New playlist name" style="flex:1; padding:10px 12px; border-radius:10px; border: 1px solid rgba(148,163,184,.25); background: rgba(15,23,42,.6); color:#e2e8f0;" />
+      <button id="createBtn" class="icon-btn">Create</button>
+    </div>
+
+    <div id="playlistsContainer"></div>
+  </div>
+
+  <script src="tracks.js"></script>
+  <script src="playlists.js"></script>
+</body>
+</html>
+
